@@ -49,3 +49,6 @@ Temporary Items
 # Other directories
 spam
 ham
+
+# Files
+*_credentials.json
