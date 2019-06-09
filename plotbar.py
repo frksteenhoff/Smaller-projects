@@ -85,3 +85,19 @@ def plot3bar(bar1, name1, bar2, name2, bar3, name3, x_in, title, xaxis, yaxis, f
 
     fig = go.Figure(data=data, layout=layout)
     py.iplot(fig, sharing='public', filename=filename_)
+
+def plotline(valueList, years):
+    data = []
+
+    for item in valueList:
+        yy = item
+
+        # Create a trace
+        trace = go.Scatter(
+            x = years,
+            y = yy
+        )
+
+        data.append(trace)
+
+    py.iplot(data, filename='basic-line.png')
